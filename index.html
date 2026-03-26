@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Age</title>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: rgb(55, 93, 74);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .InputBox {
+            background-color: rgb(203, 203, 203);
+            padding: 50px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .time {
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .btn {
+            border: none;
+            padding: 5px 10px;
+            border-radius: 6px;
+            background-color: rgb(15, 134, 94);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="InputBox">
+            <div class="text">Enter time in milliseconds</div>
+            <input type="datetime-local" class=".time" id="user1" value="2004-06-04T04:00">
+            <input type="datetime-local" class=".time" id="user2" value="2006-10-03T15:00">
+            <!-- <input type="text" class=".time" id="user1" value="2004-06-04 04:00">
+            <input type="text" class=".time" id="user2" value="2006-10-03 15:00"> -->
+            <button class="btn">Compare</button>
+
+            <div class="result">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
